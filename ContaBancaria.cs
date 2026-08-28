@@ -2,13 +2,37 @@
 {
     public class ContaBancaria
     {
-
-
-        string titular = "Isabel";
+        string Titular = "Isabel";
         int NumeroConta = 2957;
-        double Saldo = 1500.00;
+        double Saldo = 15000.00;
+        double DepositarValor = 7500.00;
+        double Sacar = 3750.00;
 
 
+        public ContaBancaria(string titular, int numeroconta, double saldo, double depositarvalor, double sacar)
+        {
+            Titular = titular;
+            NumeroConta = numeroconta;
+            Saldo = saldo;
+            DepositarValor = depositarvalor;
+            Sacar = sacar;
+
+        }
+
+
+
+
+        public void ExibirInformacoes()
+        {
+            Console.WriteLine($"O Titular : {Titular} portador da conta {NumeroConta} possui {Saldo}, e irá depositar um valor de {DepositarValor} na sua conta bancária, e logo após sacar um valor igualitario de {Sacar}");
+            Console.WriteLine("-----------------------------");
+        }
+
+        static void Main(string[] args)
+        {
+
+            ContaBancaria minhaContaBancaria = new ContaBancaria("Isabel", 2957, 15000.00, 7500.00, 3750.00);
+            minhaContaBancaria.ExibirInformacoes();
+        }
     }
-
 }

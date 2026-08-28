@@ -1,4 +1,4 @@
-     //CRIANDO O OBJETO (INSTANCIAÇÃO)
+//CRIANDO O OBJETO (INSTANCIAÇÃO)
             Carro meuJetta = new Carro();
             meuJetta.Marca = "Volkswagen";
             meuJetta.Modelo = " Jetta GT MK3";
