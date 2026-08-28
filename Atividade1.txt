@@ -1,0 +1,18 @@
+     //CRIANDO O OBJETO (INSTANCIAÇÃO)
+            Carro meuJetta = new Carro();
+            meuJetta.Marca = "Volkswagen";
+            meuJetta.Modelo = " Jetta GT MK3";
+            meuJetta.Ano = 1992;
+            meuJetta.Cor = "Chumbo";
+
+            Carro carroVizinho = new Carro();
+            carroVizinho.Marca = "Fiat";
+            carroVizinho.Modelo = "Uno";
+            carroVizinho.Ano = 2010;
+            carroVizinho.Cor = "Prata";
+
+            Console.WriteLine("Informaçãoes do meu carro:");
+            meuJetta.ExibirInformacoes();
+
+            Console.WriteLine("Informaçãoes do carro do vizinho:");
+            carroVizinho.ExibirInformacoes();

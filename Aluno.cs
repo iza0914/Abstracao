@@ -1,0 +1,38 @@
+namespace Aluno
+{
+    public class Aluno
+    {
+        public string Nome;
+        public int Matricula;
+        public int Nota1;
+        public int Nota2;
+
+
+        public Aluno(string nome, int matricula, int nota1, int nota2)
+        {
+            Nome = nome;
+            Matricula = matricula;
+            Nota1 = nota1;
+            Nota2 = nota2;
+        }
+
+
+        public float CalcularMedia()
+        {
+            return (float)(Nota1 + Nota2) / 2;
+        }
+
+        public void ExibirInformacoes()
+        {
+            Console.WriteLine($"O Aluno: {Nome} portador da matrícula {Matricula} possui {CalcularMedia()} de média");
+            Console.WriteLine("-----------------------------");
+        }
+
+        static void Main(string[] args)
+        {
+
+            Aluno meuAluno = new Aluno("Isabel", 8149, 7, 9);
+            meuAluno.ExibirInformacoes();
+        }
+    }
+}
